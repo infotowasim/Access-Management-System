@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: accessManagementSystem
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/idm
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: test
+    schema-generate: UPDATE
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+netty:
+  default:
+    allocator:
+      max-order: 3
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
